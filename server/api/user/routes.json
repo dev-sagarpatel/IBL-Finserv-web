@@ -1,0 +1,52 @@
+[
+    {
+        "path" : "/",
+        "method" : "get",
+        "action" : "main.list",
+        "public" : true,
+        "globalMiddlewares": [],
+        "middlewares": [],
+        "pathFromRoot": false,
+        "enabled": true
+    },
+    {
+        "path" : "/:id",
+        "method" : "get",
+        "action" : "main.single",
+        "public" : true,
+        "globalMiddlewares": [],
+        "middlewares": ["validation.fetch"],
+        "pathFromRoot": false,
+        "enabled": true
+    },
+    {
+        "path" : "/:id",
+        "method" : "put",
+        "action" : "main.update",
+        "public" : true,
+        "globalMiddlewares": [],
+        "middlewares": ["validation.update"],
+        "pathFromRoot": false,
+        "enabled": true
+    },
+    {
+        "path" : "/",
+        "method" : "post",
+        "action" : "main.create",
+        "public" : true,
+        "globalMiddlewares": [],
+        "middlewares": ["validation.create"],
+        "pathFromRoot": false,
+        "enabled": true
+    },
+    {
+        "path" : "/:id",
+        "method" : "delete",
+        "action" : "main.delete",
+        "public" : true,
+        "globalMiddlewares": [],
+        "middlewares": ["validation.delete"],
+        "pathFromRoot": false,
+        "enabled": true
+    }
+]

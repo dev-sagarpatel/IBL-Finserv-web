@@ -1,0 +1,10 @@
+{
+    "storagePath": {
+        "path": "uploads",
+        "uploadToS3": false,
+        "accessKeyId": "--",
+        "secretAccessKey": "--",
+        "bucketName": "--",
+        "baseUrl": "http://192.168.0.31:3005/files/"
+    }
+}

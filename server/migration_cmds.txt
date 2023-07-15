@@ -1,0 +1,20 @@
+//To create Model & migration
+npx sequelize-cli model:generate --name Address --attributes Address1:string,Address2:string,City:string,State:string,Country:string,Pincode:string
+
+//To perform migration
+npx sequelize-cli db:migrate
+
+//To create Seeds
+npx sequelize-cli seed:generate --name demo-user
+
+//To perform Seeds operation
+npx sequelize-cli db:seed:all
+
+//Undo migrations
+npx sequelize-cli db:migrate:undo
+
+//Undo all migrations
+npx sequelize-cli db:migrate:undo:all
+
+//Create new Migration
+npx sequelize-cli migration:generate --name NAME_OF_MIGRATION

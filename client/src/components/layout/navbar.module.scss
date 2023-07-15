@@ -1,0 +1,37 @@
+.nav {
+  padding: 1rem 3rem;
+  width: 100%;
+  background-color: var(--main-font-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    color: var(--body-color);
+    text-transform: uppercase;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  button {
+    background-color: var(--body-color);
+    color: var(--main-font-color);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      padding: 8px 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+}

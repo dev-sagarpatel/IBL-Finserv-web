@@ -1,0 +1,7 @@
+node_modules
+.history
+.env
+.DS_Store
+package-lock.json
+/config/database.json
+config/database.json

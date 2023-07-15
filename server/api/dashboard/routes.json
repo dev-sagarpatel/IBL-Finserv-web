@@ -1,0 +1,22 @@
+[
+  {
+    "path": "/order",
+    "method": "post",
+    "action": "main.createOrder",
+    "public": true,
+    "globalMiddlewares": [],
+    "middlewares": [],
+    "pathFromRoot": false,
+    "enabled": true
+  },
+  {
+    "path": "/payment",
+    "method": "post",
+    "action": "main.paymentConfirm",
+    "public": true,
+    "globalMiddlewares": [],
+    "middlewares": [],
+    "pathFromRoot": false,
+    "enabled": true
+  }
+]
